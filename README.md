@@ -10,7 +10,7 @@ N/A
 
 ## Usage
 
-The URL to the page is 
+The URL to the page is https://lmerrico.github.io/JavaScript/
 
 Click on the "Generate Password" button to start.
 
@@ -20,7 +20,7 @@ Choose a length of the password (between 8 and 128 characters).
 
 ![Alt text](<assets/images/choose a length.png>)
 
-Choose character types to include in the password (lowercase, uppercase, numeric, and/or special characters).
+Choose (Y/N) character types to include in the password (lowercase, uppercase, numeric, and/or special characters).
 
 ![Alt text](<assets/images/choose character types.png>)
 
