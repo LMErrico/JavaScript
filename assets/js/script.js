@@ -76,7 +76,67 @@ var charNumeric = prompt("Confirm if you want to include numeric characters Y/N:
 
 /*4.  WHEN all prompts are answered
       THEN a password is generated that matches the selected criteria*/
-    
+
+var lowercase = 'abcdefghijklmnopqrstuvwxyz';
+var uppercase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+var numeric = '0123456789';
+var special = '!@#$%^&*()_+?/><';
+var pswdchars = "";
+
+/* Version 1:
+
+const pswdarray = [charLowercase, charUppercase, charNumeric, charSpecial];
+const pswddata = [lowercase, uppercase, numeric, special];
+
+  console.log('PSWD String');
+  console.log(pswdarray);
+
+var firsttype = 0;
+  
+  for (let i = 0; i < 4; i++) {
+   if ((pswdarray[i] === 'Y') &&  (firsttype === 0)) {
+      firsttype++
+      pswdchars = pswddata[i]
+   } else if (pswdarray[i] === 'Y'){
+      pswdchars = pswdchars.concat(pswddata[i])
+    }
+}
+  console.log("Generated pswd characters");
+  console.log(pswdchars);*/
+
+// Version 2:
+
+if (charLowercase == "Y") {
+  pswdchars += lowercase
+} 
+if (charUppercase == "Y") {
+  pswdchars += uppercase
+} 
+if (charNumeric == "Y") {
+  pswdchars += numeric
+} 
+if (charSpecial == "Y") {
+  pswdchars += special
+}
+
+console.log(pswdchars);
+console.log('pswdchars');
+console.log(pswdchars.length);
+
+/*5.  WHEN the password is generated
+      THEN the password is either displayed in an alert or written to the page*/
+
+var result = ' ';
+const pswdcharslength = pswdchars.length;
+
+  for ( let i = 0; i < pswdLength; i++ ) {
+        result += pswdchars.charAt(Math.floor(Math.random() * pswdcharslength));
+      }
+  
+      console.log("password =  ");
+      console.log(result);
+  
+  return result ;
   
 }
     
